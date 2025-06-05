@@ -1,0 +1,38 @@
+{
+    "OttoMod:suona": {
+        "NAME": "唢呐",
+        "FLAVOR": "主播不会吹唢呐。",
+        "DESCRIPTIONS": [
+            "每 #y斩杀 一名敌人，获得计数点 #y格挡 ，随后将计数加1。 NL （上限30）"
+        ]
+    },
+    "OttoMod:Rusted_Wheelchair": {
+        "NAME": "锈蚀轮椅",
+        "FLAVOR": "年久失修的老轮椅，可能是国王儿时的座驾。",
+        "DESCRIPTIONS": [
+            "在每场战斗开始时， #y推轮 5次。",
+            "我小学的时候吧，就四五年级那会儿被车撞变成植物人，然后就没有再去上学了。"
+        ]
+    },
+    "OttoMod:Space_Capsule": {
+        "NAME": "太空舱",
+        "FLAVOR": "otto是残疾人，大家多点关心多点爱",
+        "DESCRIPTIONS": [
+            "替换 #y锈蚀轮椅 。在你的回合开始时， #y推轮 3次。"
+        ]
+    },
+    "OttoMod:GreenTrain": {
+        "NAME": "绿皮火车",
+        "FLAVOR": "被用烂的三大意境：德州之夜，绿皮火车和职业梦。",
+        "DESCRIPTIONS": [
+            "在你的回合开始时，获得 [G] 。 #y推轮 的伤害减少 #r2 点。"
+        ]
+    },
+    "OttoMod:SecondDumpling": {
+        "NAME": "第二个韭菜盒子",
+        "FLAVOR": "缺的营养这块给我补上来了",
+        "DESCRIPTIONS": [
+            "战斗开始时，下回合获得 [G] 。"
+        ]
+    }
+}

@@ -1,0 +1,109 @@
+{
+  "OttoMod:Cancer": {
+    "NAME": "癌症",
+    "DESCRIPTIONS": [
+      "在回合开始时，失去 ",
+      " 点生命。"
+    ]
+  },
+  "OttoMod:Delicious": {
+    "NAME": "营养",
+    "DESCRIPTIONS": [
+      "部分卡牌打出时将获得特殊效果。"
+    ]
+  },
+  "OttoMod:Fury": {
+    "NAME": "怒气",
+    "DESCRIPTIONS": [
+      "下张攻击牌额外造成 ",
+      " 点伤害。"
+    ]
+  },
+  "OttoMod:WheelBoostPower": {
+    "NAME": "疾冲",
+    "DESCRIPTIONS": [
+      "推轮时的伤害增加 ",
+      "推轮时的伤害减少 ",
+      " 点。"
+    ]
+  },
+  "OttoMod:ProfessionForm": {
+    "NAME": "职业形态",
+    "DESCRIPTIONS": [
+      "每回合获得 ",
+      " 点疾冲。"
+    ]
+  },
+  "OttoMod:SilverDog": {
+    "NAME": "白银低分狗",
+    "DESCRIPTIONS": [
+      "每次给予癌症时施加 ",
+      " 层虚弱。"
+    ]
+  },
+  "OttoMod:DeathBed": {
+    "NAME": "弥留之际",
+    "DESCRIPTIONS": [
+      "敌人被虚弱时失去 ",
+      " 点生命。"
+    ]
+  },
+  "OttoMod:HeadMarkG": {
+    "NAME": "脑门纹急",
+    "DESCRIPTIONS": [
+      "每次获得怒气时，推轮 ",
+      " 次。"
+    ]
+  },
+  "OttoMod:TripleWolfPower": {
+    "NAME": "B三狼",
+    "DESCRIPTIONS": [
+      "怒气不再对你造成伤害。每回合结束时获得 ",
+      " 点怒气,并将 ",
+      " 张灼伤分别洗入抽牌堆和弃牌堆。"
+    ]
+  },
+  "OttoMod:InfiniteDashingPower": {
+    "NAME": "无限冲刺",
+    "DESCRIPTIONS": [
+      "你的回合开始时，手牌中加入 ",
+      " 张冲刺。"
+    ]
+  },
+  "OttoMod:WorldNo1": {
+    "NAME": "世界第一中单",
+    "DESCRIPTIONS": [
+      "你每打出一张冲刺牌，手牌中加入 ",
+      " 张小刀。",
+      " 张小刀+。"
+    ]
+  },
+  "OttoMod:ThousandsOfWhy": {
+    "NAME": "十万个为什么",
+    "DESCRIPTIONS": [
+      "你每打出一张牌，下回合获得 ",
+      " 点格挡。"
+    ]
+  },
+  "OttoMod:TurnStartPushPower": {
+    "NAME": "召唤彩字",
+    "DESCRIPTIONS": [
+      "在你的回合开始时，推轮 ",
+      " 次。"
+    ]
+  },
+  "OttoMod:DeliciousGainEnergyPower": {
+    "NAME": "饱饱的",
+    "DESCRIPTIONS": [
+      "回合开始时，若你处于营养，则下回合获得 ",
+      " 。"
+    ]
+  },
+  "OttoMod:GunFather": {
+    "NAME": "教父",
+    "DESCRIPTIONS": [
+      "打出带有虚无的牌时，给予随机敌人 ",
+      " 层癌症。"
+    ]
+  }
+}

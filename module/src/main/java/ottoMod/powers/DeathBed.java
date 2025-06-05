@@ -1,0 +1,65 @@
+//
+// Source code recreated from a .class file by IntelliJ IDEA
+// (powered by FernFlower decompiler)
+//
+
+package ottoMod.powers;
+
+import com.badlogic.gdx.graphics.g2d.TextureAtlas;
+import com.megacrit.cardcrawl.actions.AbstractGameAction.AttackEffect;
+import com.megacrit.cardcrawl.actions.common.DamageAction;
+import com.megacrit.cardcrawl.android.mods.AssetLoader;
+import com.megacrit.cardcrawl.cards.DamageInfo;
+import com.megacrit.cardcrawl.cards.DamageInfo.DamageType;
+import com.megacrit.cardcrawl.core.AbstractCreature;
+import com.megacrit.cardcrawl.core.CardCrawlGame;
+import com.megacrit.cardcrawl.localization.PowerStrings;
+import com.megacrit.cardcrawl.powers.AbstractPower;
+import ottoMod.OttoMod;
+
+public class DeathBed extends AbstractPower {
+    public static final String POWER_ID = OttoMod.makeId("DeathBed");
+    private static final PowerStrings powerStrings;
+    private static final String NAME;
+    private static final String[] DESCRIPTIONS;
+
+    public DeathBed(AbstractCreature owner, int Amount) {
+        this.name = NAME;
+        this.ID = "OttoMod:DeathBed";
+        this.owner = owner;
+        this.type = PowerType.BUFF;
+        this.amount = Amount;
+        String path128 = "img/UI_Otto/DeathBed128.png";
+        String path48 = "img/UI_Otto/DeathBed48.png";
+        this.region128 = new TextureAtlas.AtlasRegion(AssetLoader.getTexture(OttoMod.MOD_ID,path128), 22, 22, 84, 84);
+        this.region48 = new TextureAtlas.AtlasRegion(AssetLoader.getTexture(OttoMod.MOD_ID,path48), 8, 8, 32, 32);
+        this.updateDescription();
+    }
+
+    public void onApplyPower(AbstractPower power, AbstractCreature target, AbstractCreature source) {
+        if (power.ID.equals("Weakened") && target != this.owner && source == this.owner && !target.hasPower("Artifact")) {
+            this.flash();
+            this.addToBot(new DamageAction(target, new DamageInfo(source, this.amount, DamageType.HP_LOSS), AttackEffect.FIRE));
+        }
+
+    }
+
+    public void updateDescription() {
+        this.description = DESCRIPTIONS[0] + this.amount + DESCRIPTIONS[1];
+    }
+
+    public void stackPower(int stackAmount) {
+        super.stackPower(stackAmount);
+        if (this.amount > 999) {
+            this.amount = 999;
+        }
+
+        this.updateDescription();
+    }
+
+    static {
+        powerStrings = CardCrawlGame.languagePack.getPowerStrings("OttoMod:DeathBed");
+        NAME = powerStrings.NAME;
+        DESCRIPTIONS = powerStrings.DESCRIPTIONS;
+    }
+}

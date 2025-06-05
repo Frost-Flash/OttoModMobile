@@ -1,0 +1,10 @@
+{
+  "modId": "OttoMod",
+  "modName": "电棍Mod(移植版)",
+  "modVersion": "1.5",
+  "descriptions": {
+    "zhs": ["冲刺！冲！"]
+  },
+  "authorList": ["FrostFlash"],
+  "dependencies": []
+}
