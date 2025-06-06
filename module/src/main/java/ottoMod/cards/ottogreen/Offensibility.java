@@ -34,8 +34,7 @@ public class Offensibility extends CustomCard {
 
     public void use(AbstractPlayer p, AbstractMonster m) {
              CardCrawlGame.sound.play(ID);
-        CardCrawlGame.sound.play("Offensive");
-        if (p.hasPower("ottoMod:Delicious")) {
+        if (p.hasPower("OttoMod:Delicious")) {
             this.addToBot(new DamageAllEnemiesAction(p, this.multiDamage, DamageType.NORMAL, AttackEffect.LIGHTNING));
             this.addToTop(new SFXAction("ORB_LIGHTNING_EVOKE", 0.1F));
             this.addToBot(new DamageAllEnemiesAction(p, this.multiDamage, DamageType.NORMAL, AttackEffect.LIGHTNING));
